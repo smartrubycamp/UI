@@ -19,6 +19,27 @@
     color: white;
     font-size: 17px;
 }
+ .item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
+		border-radius: 50%;
+		height: 100%;
+		left: 81px;
+		max-height: 89px;
+		max-width: 99px;
+		position: absolute;
+		top: 39px;
+		<!-- width: 100%; -->
+	}
+	.item-avatar, .item-avatar .item-content, .item-avatar-left, .item-avatar-left .item-content {
+	padding-left: 93px;
+	min-height: 91px;
+	padding-top: 146px;
+	}
+	.para{
+		background-color:#2D766C!important;
+		border-top-color:#1E3B3A!important;
+		height: 40px;
+		padding-top:8px;
+	}
 </style>
 
 <ion-side-menus enable-menu-with-back-views="false">
@@ -35,23 +56,41 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-        <span>
-            <img width="52px" height="35px" src="https://aidindia.org/wp-content/uploads/2016/04/education-icon.png">
-            <h1 style="color: white; left: 62px; right: 62px;" class="title">Ruby Campus</h1>
-        </span>
-    </ion-header-bar>
+    <!-- <ion-header-bar class="bar-stable"> -->
+        <!-- <span> -->
+            <!-- <img width="52px" height="35px" src="https://aidindia.org/wp-content/uploads/2016/04/education-icon.png"> -->
+            <!-- <h1 style="color: white; left: 62px; right: 62px;" class="title">Ruby Campus</h1> -->
+        <!-- </span> -->
+    <!-- </ion-header-bar> -->
     <ion-content>
-    <div class="list">
+	    <a class="item item-avatar" style="background-color:#1E3B3A">
+		    <img src="img/images.jpg">
+			<!-- <h2 class="title" style="color: white;margin-left: -25px;margin-bottom:25px;  margin-top: -20px;font-size:12px;color:#3F51B5;">A days - cum - Residential school..</h2> -->
+			<!-- <h2  style="color: white;">Randy</h2> -->
+		</a>
+		<a class="para item">
+			<h2 class="title" style="color: white;text-align:center;margin-left:-20px;"> Karthik ruby</h2>
+		</a>
+    <div class="list"> 
+	
       <a class="item item-icon-left" ui-sref="app.playlists" >
+        <i class="icon ion-home"></i>
+        Home
+      </a>
+	   <a class="item item-icon-left" ui-sref="app.playlists" >
         <i class="icon ion-person"></i>
         Profile
       </a>
+	  <a class="item item-icon-left" ui-sref="app.playlists" >
+		<i class="icon ion-ios-people"></i>
+		Students
+	  </a>
       <a class="item item-icon-left" ui-sref="app.search" >
         <i class="icon ion-calendar"></i>
         Time Table
         <!-- <i class="icon ion-ios-telephone-outline"></i> -->
       </a>
+	  
       <a class="item item-icon-left" ui-sref="app.browse">
         <i class="icon ion-compose"></i>
         Exam
@@ -59,6 +98,10 @@
       <a class="item item-icon-left" ui-sref="app.single" >
         <i class="icon ion-ios-list-outline"></i>
         Results
+      </a>
+	   <a class="item item-icon-left" ui-sref="app.playlists" >
+        <i class="icon ion-calendar"></i>
+        Events
       </a>
     </div>
       <!-- <ion-list>
