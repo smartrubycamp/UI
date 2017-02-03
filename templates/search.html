@@ -1,44 +1,106 @@
-<ion-view view-title="">
+<ion-view view-title="" style="background-color: #F5F5F5">
   <ion-content>
   	<div class="card">
-	  <!-- <div class="item item-text-wrap"> -->
-		<div class="row">
-		<div class="list col-100">
-
-		  <div class="item item-divider">
-		    Candy Bars
+	  	<div class="list">
+	  	 <div class="item item-divider" style="background-color: white;border-bottom: 1px solid #387EF5;color: tomato">
+			    Profile Details
+			  </div>
+	  		<div style="border-bottom: 1px solid #DDDDDD" class="row">
+			    <div class="col col-20">
+			    	<img width="45px" height="" style="padding-top: 6px" src="https://cdn3.iconfinder.com/data/icons/banking-finance-ii-monocolor-white-circle-multicol/2048/Identity_Card-512.png">
+			    </div>
+			    <div class="col col-80">
+			    	<p style="color: #387EF5">Candidate Name</p>
+			    	<p style="font-size: 16px;line-height: 11px">Siva</p>
+			    </div>
+			   </div>
+			   <div style="border-bottom: 1px solid #DDDDDD;padding-top: 12px" class="row">
+			    <div class="col col-20">
+			    	<img width="45px" height="" style="padding-top: 6px" src="https://cdn0.iconfinder.com/data/icons/flaturici-set-3/512/id-512.png">
+			    </div>
+			    <div class="col col-80">
+			    	<p style="color: #387EF5">Id Number</p>
+			    	<p style="font-size: 16px;line-height: 11px">AD15244545</p>
+			    </div>
+			   </div>
+			   <div style="border-bottom: 1px solid #DDDDDD;padding-top: 12px" class="row">
+			    <div class="col col-20">
+			    	<img width="45px" height="" style="padding-top: 6px" src="https://s-media-cache-ak0.pinimg.com/favicons/fd32f4c1dba8e18a0406739135de6e956ff7e64a7de1f17e7ae9f4e4.ico?64d6edb20cc500a5505ff5ecc83e6c15">
+			    </div>
+			    <div class="col col-80">
+			    	<p style="color: #387EF5">Course Name</p>
+			    	<p style="font-size: ;line-height: 11px">Bsc Computer Science</p>
+			    </div>
+			   </div>
+			   <div style="padding-top: 12px" class="row">
+			    <div class="col col-20">
+			    	<img width="45px" height="" style="padding-top: 6px" src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/vkontakte-icon.png">
+			    </div>
+			    <div class="col col-80">
+			    	<p style="color: #387EF5">Batch Name</p>
+			    	<p style="font-size: 16px;line-height: 11px">A Batch</p>
+			    </div>
+			   </div>
 		  </div>
-
-		  <a class="item" href="#">
-		    Butterfinger
-		  </a>
-
-		  ...
-
-		</div>
-			<!-- <div class="col col-20"></div>
-			<div class="col col-80"></div> -->
-		</div>	  
-	  <!-- </div> -->
 	</div>
-<div class="list card">
-  <a href="#" class="item item-icon-left">
-    <i class="icon ion-home"></i>
-    Enter home address
-  </a>
-  <a href="#" class="item item-icon-left">
-    <i class="icon ion-ios-telephone"></i>
-    Enter phone number
-  </a>
-  <a href="#" class="item item-icon-left">
-    <i class="icon ion-wifi"></i>
-    Enter wireless password
-  </a>
-  <a href="#" class="item item-icon-left">
-    <i class="icon ion-card"></i>
-    Enter card information
-  </a>
-</div>
-   
   </ion-content>
 </ion-view>
+
+
+
+<!-- <ion-header-bar class="headerborder" >
+	<div class=" home-head2 " ng-click="goback();">
+		<i class="ion ion-arrow-left-c back-icon"></i>
+    </div>
+    <div class="home-head2">
+		<p  class="headertitle">Account Information</p>
+	</div>
+</ion-header-bar>
+<ion-view>
+    <ion-content class="bgnew">
+		<div class="card">
+			<div class="item itemleft item-avatar">
+				<img src="https://cdn2.iconfinder.com/data/icons/the-data-visualisation-catalogue-search-icon-set/170/part_to_a_whole-512.png" class="item-Image">
+				<div class="ItemlineHead cardContent">Account Number</div>
+				<div class="ItemlineValueText cardContent">{{account_information.ACC_NUM}}</div>
+			</div>
+			<div class="item item-avatar itemleft">
+				<img src="img/item/plan.png" class="item-Image">
+				<div class="ItemlineHead cardContent">Plan</div>
+				<div class="ItemlineValueText cardContent">{{account_information.PLAN_NAME}}</div>
+			</div>
+			<div class="item item-avatar itemleft">
+				<img src="img/item/dateicon.png" class="item-Image">
+				<div class="ItemlineHead cardContent">HSA Effective Date</div>
+				<div class="ItemlineValueText cardContent">{{account_information.EFFECTIVE_DATE}}</div>
+			</div>
+			<div class="item item-avatar itemleft">
+				<img src="img/item/account_balance.png" class="item-Image">
+				<div class="ItemlineHead cardContent">Account Balance</div>
+				<div class="ItemlineValueText cardContent">{{account_information.ACCT_BALANCE | currency}}</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="item ItemLinehr">
+				<span class="ItemHeadLine">Total Contributions</span>
+			</div>
+			<div class="item item-avatar itemleft  ItemLinehr item-text-wrap">
+				<img src="img/item/Total-contribution.png" class="item-Image1">
+				<div class="ItemlineHead cardContent">Total Contributions for 2016</div>
+				
+				<div class="ItemlineValueText cardContent">{{total_contributions.CURRENT_YR_CONTRB| currency}}</div>
+			</div>
+			<div class="item item-avatar itemleft  item-text-wrap">
+				<img src="img/item/Allowable-contributions.png" class="item-Image1">
+				<div class="ItemlineHead cardContent">Allowable Contributions Remaining for 2016</div>
+				<div class="ItemlineValueText cardContent">{{total_contributions.CONTRB_LIMIT  | currency}}</div>
+			</div>
+			<div class="item item-avatar itemleft item-text-wrap">
+				<img src="img/item/Total-disburesment.png" class="item-Image1">
+				<div class="ItemlineHead cardContent">Total Disbursement for 2016</div>
+				<div class="ItemlineValueText cardContent">{{total_contributions.TOTAL_DISB_AMOUNT | currency}}</div>
+			</div>
+		</div>
+		
+  </ion-content>
+</ion-view> -->

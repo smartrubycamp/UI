@@ -41,14 +41,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  // .state('app.browse', {
-  //     url: '/browse',
-  //     views: {
-  //       'menuContent': {
-  //         templateUrl: 'templates/browse.html'
-  //       }
-  //     }
-  //   })
+  .state('app.browse', {
+      url: '/browse',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/browse.html'
+        }
+      }
+    })
     .state('app.dashboard', {
       url: '/dashboard',
       views: {

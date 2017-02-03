@@ -1,17 +1,7 @@
 
-<style type="text/css">
-  .round-card {
-    background: #73ad21 none repeat scroll 0 0;
-    border-radius: 94%;
-    height: 135px;
-    padding: 20px;
-    width: 146px;
-}
-.round{padding: 20px}
-</style>
 <ion-view view-title="Ruby Campus">
-  <ion-content>
-      <div style="padding-top: 44px ">
+  <!-- <ion-content>
+      <div style="padding-top: 0px ">
       <div class="card">
         <div class="row">
           <div class="col col-25">
@@ -40,7 +30,8 @@
           <img src="https://www.littlelives.com/img/icons/icon_attendance_big.png" width="60px;height:40px">
           </div>
           <div class="col col-75">
-          <p style=" color: #387EF5;margin-left: 10px; line-height: 57px;font-size: 17px">Attendance</p> 
+          <a ui-sref="app.browse" style="text-decoration:none;">
+          <p style=" color: #387EF5;margin-left: 10px; line-height: 57px;font-size: 17px">Attendance</p></a> 
           </div>
         </div>
       </div>
@@ -64,47 +55,160 @@
           </div>
         </div>
       </div>
-      <!-- <div class="round">
-      <center>
-      <div class="round-card">
-        <div class="">
+  </ion-content> -->
+  <ion-content>
+      <div class="row" style="padding-bottom: 0px;margin-top: 0px">
+        <div class="col card">
           <a href="#">
-            <center>
-            <img src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png" width="60px;height:40px">
-            </center>
-            <center><a style="text-decoration: none;" href="#">View Profile</a></center>
-            </a>
+          <center>
+            <img width="60px;height:40px" src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png">
+          </center>
+          <center><p style="color: #387EF5">Profile</p></center>
+          </a>
+        </div>
+        <div class="col card">
+          <a href="#">
+          <center>
+            <img width="60px;height:40px" src="https://cdn0.iconfinder.com/data/icons/healthcare-medicine/512/schedule_clock-512.png">
+          </center>
+          <center><p style="color: #387EF5">Time Table</p></center>
+          </a>
+        </div>
+        <div class="col card">
+          <a href="#">
+          <center>
+            <img width="60px;height:40px" src="https://www.littlelives.com/img/icons/icon_attendance_big.png">
+            <!-- http://www.iithouse.com/cms/wp-content/uploads/2016/05/RP.png -->
+          </center>
+          <center><p style="color: #387EF5">Attendance</p></center>
+          </a>
         </div>
       </div>
-      </center>
-      </div>
-      <div class="round">
-      <center>
-      <div class="round-card">
-        <div class="">
+      <div class="row" style="padding-bottom: 0px;margin-top: -23px">
+        <div class="col card">
           <a href="#">
-            <center>
-            <img src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png" width="60px;height:40px">
-            </center>
-            <center><a style="text-decoration: none;" href="#">View Profile</a></center>
-            </a>
+          <center>
+            <img width="60px;height:40px" src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calendar-icon.png">
+          </center>
+          <center><p style="color: #387EF5">Calendar</p></center>
+          </a>
+        </div>
+        <div class="col card">
+          <center>
+            <img width="60px;height:40px" src="http://trentonsewell.com/wp-content/uploads/2013/08/GALLERY_ICON.png">
+          </center>
+          <center><p style="color: #387EF5">Galary</p></center>
+        </div>
+        <div class="col card">
+          <center>
+            <img width="60px;height:40px" src="http://www.tomotech.vn/publics/images/exam.PNG">
+          </center>
+          <center><p style="color: #387EF5">Exam </p></center>
         </div>
       </div>
-      </center>
-      </div>
-      <div class="round">
-      <center>
-      <div class="round-card">
-        <div class="">
-          <a href="#">
-            <center>
-            <img src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png" width="60px;height:40px">
-            </center>
-            <center><a style="text-decoration: none;" href="#">View Profile</a></center>
-            </a>
+      <div class="row" style="padding-bottom: 0px;margin-top: -23px">
+        <div class="col card">
+          <center>
+            <img width="60px;height:40px" src="http://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/256/Message-bubbles-icon.png">
+          </center>
+          <center><p style="color: #387EF5">Message</p></center>
+        </div>
+        <div class="col card">
+          <center>
+            <img width="60px;height:40px" src="http://cdn2.hubspot.net/hub/368713/file-1243399705-png/quiz_icon.png">
+          </center>
+          <center><p style="color: #387EF5">Assignment</p></center>
+        </div>
+        <div class="col card">
+          <center>
+            <img width="60px;height:40px" src="https://cdn2.iconfinder.com/data/icons/education-4-1/256/School_Test-512.png">
+          </center>
+          <center><p style="color: #387EF5">Reports</p></center>
         </div>
       </div>
-      </center>
+
+
+      <!-- <div class="responsive-sm">
+      <div class="row">
+        <div class="col col-33">
+          <div class="card">
+          <center><img width="60px;height:40px" src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png"></center>
+          <center><p>asdasd</p></center>
+          </div>
+        </div>
+        <div class="col col-33">
+          <div class="card">
+          <center><img width="60px;height:40px" src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png"></center>
+          <center><p>asdasd</p></center>
+          </div>
+        </div>
+
+       <div class="col col-33"><img width="60px;height:40px" src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png"></div>
+       <div class="col col-33"><img width="60px;height:40px" src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png"></div>
+      </div>
       </div> -->
+      <!-- <div class="card">
+        <div class="row">
+          <div class="col col-25">
+          <img width="60px;height:40px" src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baed03a54e.png">
+          </div>
+          <div class="col col-75">
+          <a ui-sref="app.search" style="text-decoration:none; ">
+          <p style=" color: #387EF5;margin-left: 10px; line-height: 57px;font-size: 17px">Profile</p> 
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <div class="col col-25">
+          <img src="https://cdn2.iconfinder.com/data/icons/staff-management/512/datetime-512.png" width="60px;height:40px">
+          </div>
+          <div class="col col-75">
+          <p style=" color: #387EF5;margin-left: 10px; line-height: 57px;font-size: 17px">Time Table</p> 
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <div class="col col-25">
+          <img src="https://www.littlelives.com/img/icons/icon_attendance_big.png" width="60px;height:40px">
+          </div>
+          <div class="col col-75">
+          <a ui-sref="app.browse" style="text-decoration:none;">
+          <p style=" color: #387EF5;margin-left: 10px; line-height: 57px;font-size: 17px">Attendance</p></a> 
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <div class="col col-25">
+          <img src="https://cdn2.iconfinder.com/data/icons/ikooni-outline-seo-web/128/seo3-35-512.png" width="60px;height:40px">
+          </div>
+          <div class="col col-75">
+          <p style=" color: #387EF5;margin-left: 10px; line-height: 57px;font-size: 17px">Exam</p> 
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <div class="col col-25">
+          <img src="http://und.edu/admissions/undergraduate/_files/images/info-button.png" width="60px;height:40px">
+          </div>
+          <div class="col col-75">
+          <p style=" color: #387EF5;margin-left: 10px; line-height: 57px;font-size: 17px">Additional Details</p> 
+          </div>
+        </div> -->
   </ion-content>
 </ion-view>
+
+<!-- <style type="text/css">
+  .round-card {
+    background: #73ad21 none repeat scroll 0 0;
+    border-radius: 94%;
+    height: 135px;
+    padding: 20px;
+    width: 146px;
+}
+.round{padding: 20px}
+</style> -->
