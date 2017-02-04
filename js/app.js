@@ -41,19 +41,46 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
+  // .state('app.browse', {
+  //     url: '/browse',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/browse.html'
+  //       }
+  //     }
+  //   })
     .state('app.dashboard', {
       url: '/dashboard',
       views: {
         'menuContent': {
           templateUrl: 'templates/dashboard.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+	 .state('app.viewProfile', {
+      url: '/viewProfile',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/viewProfile.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+	 .state('app.about', {
+      url: '/about',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/about.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+	 .state('app.photos', {
+      url: '/photos',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/photos.html',
           controller: 'PlaylistsCtrl'
         }
       }
