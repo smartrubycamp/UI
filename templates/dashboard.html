@@ -2,7 +2,16 @@
 <ion-view view-title="Home">
 <style type="text/css">
 .col.card.style:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.anchorTag {
+  text-decoration: none;
+}
+.dashboardIcons{
+  width:60px;height:60px;
+}
+.rowData{
+  padding-bottom: 0px;margin-top: -23px !important;
 }
 </style>
   <!-- <ion-content>
@@ -62,89 +71,81 @@
       </div>
   </ion-content> -->
   <ion-content>
-      <div class="row" style="padding-bottom: 0px;margin-top: 0px">
+      <div class="row">
         <div class="col card style">
-          <a href="#" ui-sref="app.viewProfile" style="text-decoration: none;">
+          <a class="anchorTag" href="#" ui-sref="app.viewProfile">
           <center>
-            <img width="60px;height:40px" src="img/name.png">
+            <img class="dashboardIcons" src="img/name.png">
           </center>
-          <center><p style="color: #387EF5">Profile</p></center>
+          <center><a class="anchorTag">Profile</p></center>
           </a>
         </div>
         <div class="col card style">
-          <a href="#" ui-sref="app.profile" style="text-decoration: none;">
+          <a class="anchorTag" href="#" ui-sref="app.profile">
           <center>
-            <img width="60px;height:40px" src="img/name.png">
+            <img class="dashboardIcons" src="img/name.png">
           </center>
-          <center><p style="color: #387EF5">Profile 1</p></center>
+          <center><a class="anchorTag">Profile 1</a></center>
           </a>
         </div>
         <div class="col card style">
-          <a href="#" style="text-decoration: none;">
+          <a class="anchorTag" href="#">
           <center>
-            <img width="60px;height:40px" src="img/timetable.png">
+            <img class="dashboardIcons" src="img/timetable.png">
           </center>
-          <center><p style="color: #387EF5">Time Table</p></center>
-          </a>
-        </div>
-        <!-- <div class="col card style">
-          <a href="#" style="text-decoration: none;">
-          <center>
-            <img width="60px;height:40px" src="img/attendance.png">
-          </center>
-          <center><p style="color: #387EF5">Attendance</p></center>
-          </a>
-        </div> -->
-      </div>
-      <div class="row" style="padding-bottom: 0px;margin-top: -23px">
-        <div class="col card style">
-          <a href="#" style="text-decoration: none;">
-          <center>
-            <img width="60px;height:40px" src="img/calendar-icon.png">
-          </center>
-          <center><p style="color: #387EF5">Calendar</p></center>
-          </a>
-        </div>
-        <div class="col card style">
-          <a href="#" style="text-decoration: none;">
-          <center>
-            <img width="60px;height:40px" src="img/GALLERY_ICON.png">
-          </center>
-          <center><p style="color: #387EF5">Galary</p></center>
-          </a>
-        </div>
-        <div class="col card style">
-          <a href="#" style="text-decoration: none;">
-          <center>
-            <img width="60px;height:40px" src="img/exam.png">
-          </center>
-          <center><p style="color: #387EF5">Exam </p></center>
+          <center><a class="anchorTag">Time Table</a></center>
           </a>
         </div>
       </div>
-      <div class="row" style="padding-bottom: 0px;margin-top: -23px">
+      <div class="row rowData">
         <div class="col card style">
-          <a href="#" style="text-decoration: none;">
+          <a href="#" class="anchorTag">
           <center>
-            <img width="60px;height:40px" src="img/Message-bubbles-icon.png">
+            <img class="dashboardIcons" src="img/calendar-icon.png">
           </center>
-          <center><p style="color: #387EF5">Message</p></center>
+          <center><a class="anchorTag">Calendar</a></center>
           </a>
         </div>
         <div class="col card style">
-          <a href="#" style="text-decoration: none;">
+          <a href="#" class="anchorTag" >
           <center>
-            <img width="60px;height:40px" src="img/quiz_icon.png">
+            <img class="dashboardIcons" src="img/GALLERY_ICON.png">
           </center>
-          <center><p style="color: #387EF5">Assignment</p></center>
+          <center><a class="anchorTag">Galary</a></center>
           </a>
         </div>
         <div class="col card style">
-          <a href="#" ui-sref="app.Reciprocity" style="text-decoration: none;">
+          <a href="#" class="anchorTag" >
           <center>
-            <img width="68px;height:40px" src="img/reciprocity-icon.png">
+            <img class="dashboardIcons" src="img/exam.png">
           </center>
-          <center><p style="color: #387EF5">Reciprocity</p></center>
+          <center><a class="anchorTag">Exam </p></center>
+          </a>
+        </div>
+      </div>
+      <div class="row rowData">
+        <div class="col card style">
+          <a href="#" class="anchorTag" >
+          <center>
+            <img class="dashboardIcons" src="img/Message-bubbles-icon.png">
+          </center>
+          <center><a class="anchorTag">Message</a></center>
+          </a>
+        </div>
+        <div class="col card style">
+          <a href="#" class="anchorTag" >
+          <center>
+            <img class="dashboardIcons" src="img/quiz_icon.png">
+          </center>
+          <center><a class="anchorTag">Assignment</a></center>
+          </a>
+        </div>
+        <div class="col card style">
+          <a href="#" class="anchorTag" ui-sref="app.Reciprocity">
+          <center>
+            <img class="dashboardIcons" src="img/reciprocity-icon.png">
+          </center>
+          <center><a class="anchorTag">Reciprocity</a></center>
           </a>
         </div>
       </div>

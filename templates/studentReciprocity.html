@@ -1,12 +1,25 @@
 
-<ion-view view-title="Reciprocity" style="background-color: #F5F5F5">
+<ion-view view-title="Reciprocity" class="headerTitle">
   <ion-content>
   <style type="text/css">
+  	.headerTitle{
+  		background-color: #F5F5F5;
+  	}
 	  .card-warp{
 			padding: 10px !important
 		}
 		.NameBorder{
 			border: 1px solid #387EF5
+		}
+		@media screen and (max-width: 400px) and (min-width: 300px) {
+    .iframeVedio {
+        width:280px;height:150px;
+    	}
+		}
+	 	@media screen and (max-width: 800px) and (min-width: 750px) {
+    .iframeVedio {
+        width:725px;height:350px;
+    	}
 		}
 		.footer-size{
 		margin-left: 10px;margin-top:4px;margin-bottom: 5px
@@ -21,15 +34,35 @@
 			margin-top: 13px; font-size: 19px;margin-left: 10px;color: #387EF5
 		}
   </style>
-	  <p class="heading"><i class="ion-clock"></i> Recent Post</p>
+	<!-- <p class="heading"><i class="ion-clock"></i> Recent Post</p> -->
+	<div class="card">
+  	<a ui-sref="app.viewPost">
+	  <div class="item item-text-wrap card-warp">
+	  <h2>Raj kumar</h2>
+	  <hr class="NameBorder">
+	  <p class="contentDetails">
+		<iframe class="iframeVedio" src="https://www.youtube.com/embed/0E4TDq75rDE" frameborder="1" allowfullscreen></iframe>
+		</p>
+	  </div>
+	  <p class="footer-size">
+	  <i class="ion-calendar"></i>
+		<span class="footer-text">25/01/2017</span>
+		-
+		<i class="ion-android-time"></i>
+		<span class="footer-text">12.15 pm</span> 
+		<span class="footer-righttext">
+		<i class="ion-arrow-right-a"></i> View
+		</span>
+	  </p>
+	  </a>
+	</div>
   <div class="card">
   	<a ui-sref="app.viewPost">
 	  <div class="item item-text-wrap card-warp">
 	  <h2>Raj kumar</h2>
 	  <hr class="NameBorder">
-	  <p>Search Results
-		Image result for about education quotes
-		The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education</p>
+	  <iframe class="iframeVedio" src="https://thegroveschoolmagazine.files.wordpress.com/2014/08/img_0270.jpg" frameborder="1" allowfullscreen></iframe>
+	  </div>
 	  </div>
 	  <p class="footer-size">
 	  <i class="ion-calendar"></i>
@@ -48,10 +81,7 @@
 	  <div class="item item-text-wrap card-warp">
 	  <h2>Arun </h2>
 	  <hr class="NameBorder">
-	  <p>Search Results
-		Image result for about education quotes
-		The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education</p>
-	  </div>
+	  <iframe class="iframeVedio" src="http://www.yuvabharathi.in/events/sports/2013/01.jpg" frameborder="1" allowfullscreen></iframe>
 	  <p class="footer-size">
 	  <i class="ion-calendar"></i>
 		<span class="footer-text">03/04/2017</span>
