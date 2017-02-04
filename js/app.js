@@ -43,6 +43,14 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
         }
       }
     })
+  .state('app.viewPost', {
+      url: '/viewPost',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/viewPost.html'
+        }
+      }
+    })
     .state('app.dashboard', {
       url: '/dashboard',
       views: {
