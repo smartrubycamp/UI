@@ -26,23 +26,23 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.profile', {
+    url: '/profile',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/profile.html'
       }
     }
   })
 
-  // .state('app.browse', {
-  //     url: '/browse',
-  //     views: {
-  //       'menuContent': {
-  //         templateUrl: 'templates/browse.html'
-  //       }
-  //     }
-  //   })
+  .state('app.Reciprocity', {
+      url: '/Reciprocity',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/studentReciprocity.html'
+        }
+      }
+    })
     .state('app.dashboard', {
       url: '/dashboard',
       views: {
