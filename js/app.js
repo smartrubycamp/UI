@@ -35,11 +35,11 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
     }
   })
 
-  .state('app.Reciprocity', {
-      url: '/Reciprocity',
+  .state('app.Repository', {
+      url: '/Repository',
       views: {
         'menuContent': {
-          templateUrl: 'templates/studentReciprocity.html'
+          templateUrl: 'templates/studentRepository.html'
         }
       }
     })
@@ -48,6 +48,14 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
       views: {
         'menuContent': {
           templateUrl: 'templates/viewPost.html'
+        }
+      }
+    })
+  .state('app.Fees', {
+      url: '/Fees',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/fees.html'
         }
       }
     })
