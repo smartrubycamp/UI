@@ -1,0 +1,528 @@
+<ion-view view-title="Time Table">
+  <ion-content>
+<style type="text/css">
+	.tabs-top >.tabs, .tabs.tabs-top
+{
+    top: 0 !important;
+}
+.tabData{
+  padding-top:50px 
+}
+  .card-warp{
+    padding: 10px !important;
+    /*mediumvioletred
+    mediumturquoise
+    mediumslateblue
+    mediumseagreen
+    mediumpurple
+    mediumorchid
+    mediumaquamarine
+    lightseagreen*/
+  }
+  .period1{
+    /*background-color:mediumturquoise;*/
+    background-color: lemonchiffon;
+  }
+  .period2{
+    /*background-color:mediumslateblue;*/
+    background-color:lightblue;
+  }
+  .period3{
+    /*background-color:mediumseagreen;*/
+    background-color:lavender;
+  }
+  .period4{
+    /*background-color:mediumorchid;*/
+    background-color:ivory;
+    /*honeydew*/
+  }
+/*    lightsteelblue
+    lightcyan*/
+  .period5{
+    /*background-color:mediumseagreen;*/
+    background-color:lightsteelblue;
+  }
+  .period6{
+    /*background-color:mediumseagreen;*/
+    background-color:floralwhite;
+  }
+  .headData{
+    color: black;
+    padding-bottom: 5px !important;
+  }
+  .ContentData{
+    color: black !important
+  }
+  .Cart-border{border-top: 1px solid #DDD !important;padding-top: 7px !important}
+  .periodHeader{background-color: #387EF5;color: white}
+  .periodContent{border:1px solid #387EF5 !important}
+  .periodHeader1{background-color: #886AEA;color: white}
+  .periodContent1{border:1px solid #886AEA !important}
+  .periodHeader2{background-color: #11C1F3;color: white}
+  .periodContent2{border:1px solid #11C1F3 !important}
+  .periodHeader3{background-color: #33CD5F;color: white}
+  .periodContent3{border:1px solid #33CD5F !important}
+  .periodHeader4{background-color: #FFC900;color: white}
+  .periodContent4{border:1px solid #FFC900 !important}
+  .periodHeader5{background-color: #EF473A;color: white}
+  .periodContent5{border:1px solid #EF473A !important}
+  .periodHeader6{background-color: #444444;color: white}
+  .periodContent6{border:1px solid #444444 !important}
+  .periodHeader7{background-color: #886AEA;color: white}
+  .periodContent7{border:1px solid #886AEA !important}
+</style>
+	<ion-tabs class="tabs-striped tabs-top tabs-background-gray tabs-color-gray">
+        <ion-tab title="Mon">
+           <ion-nav-view name="help">
+           <div class="tabData">
+            <div class="card">
+              <div class="item item-text-wrap card-warp period1">
+              <h2 class="headData"><i class="ion-clock"></i> 10:00 am - 11:00 pm</h2>
+              <!-- <hr class="NameBorder"> -->
+              <div class="Cart-border">
+                <p class="ContentData">Subject : English</p>
+                <p class="ContentData">Staff Name : Sivakumar</p>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="item item-text-wrap card-warp period2">
+              <h2 class="headData"><i class="ion-clock"></i> 11:00 am - 12:00 pm</h2>
+              <div class="Cart-border">
+                <p class="ContentData">Subject : karthik</p>
+                <p class="ContentData">Staff Name : Science</p>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="item item-text-wrap card-warp period3">
+              <h2 class="headData"><i class="ion-clock"></i> 12:00 pm - 01:00 pm</h2>
+              <!-- <hr class="NameBorder"> -->
+              <div class="Cart-border">
+                <p class="ContentData">Subject : Tamil</p>
+                <p class="ContentData">Staff Name : Senthil</p>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="item item-text-wrap card-warp period4">
+              <h2 class="headData"><i class="ion-clock"></i> 02:00 pm - 03:00 pm</h2>
+              <div class="Cart-border">
+                <p class="ContentData">Subject : Maths</p>
+                <p class="ContentData">Staff Name : Manivannan</p>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="item item-text-wrap card-warp period5">
+              <h2 class="headData"><i class="ion-clock"></i> 02:00 pm - 03:00 pm</h2>
+              <div class="Cart-border">
+                <p class="ContentData">Subject : Maths</p>
+                <p class="ContentData">Staff Name : Manivannan</p>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="item item-text-wrap card-warp period6">
+              <h2 class="headData"><i class="ion-clock"></i> 02:00 pm - 03:00 pm</h2>
+              <div class="Cart-border">
+                <p class="ContentData">Subject : Maths</p>
+                <p class="ContentData">Staff Name : Manivannan</p>
+              </div>
+              </div>
+            </div>
+           </div>
+           </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Tue">
+            <ion-nav-view name="home">
+              <div class="tabData">
+                <div class="card">
+                  <div class="item item-divider periodHeader">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader1">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent1">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader2">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent2">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader3">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent3">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader4">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent4">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader5">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent5">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader6">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent6">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader7">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent7">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>  
+              </div>
+            </ion-nav-view> 
+        </ion-tab>
+        <ion-tab title="Wed">
+            <ion-nav-view name="contact">
+              <div class="tabData">
+                <div class="card">
+                  <div class="item item-divider periodHeader1">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent1">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader2">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent2">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader3">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent3">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader4">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent4">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader5">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent5">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader6">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent6">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader7">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent7">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>  
+              </div>
+            </ion-nav-view> 
+        </ion-tab>
+        <ion-tab title="Thu">
+            <ion-nav-view name="contact">
+              <div class="tabData">
+                <div class="card">
+                  <div class="item item-divider periodHeader3">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent3">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader1">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent1">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader2">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent2">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader4">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent4">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader5">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent5">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader6">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent6">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader7">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent7">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>  
+              </div>
+            </ion-nav-view> 
+        </ion-tab>
+        <ion-tab title="Fri">
+            <ion-nav-view name="contact">
+              <div class="tabData">
+                <div class="card">
+                  <div class="item item-divider periodHeader">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader1">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent1">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader2">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent2">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader3">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent3">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader4">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent4">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader5">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent5">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader6">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent6">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader7">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent7">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>  
+              </div>
+            </ion-nav-view> 
+        </ion-tab>
+        <ion-tab title="Sat">
+            <ion-nav-view name="contact">
+              <div class="tabData">
+                <div class="card">
+                  <div class="item item-divider periodHeader5">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent5">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader1">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent1">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader2">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent2">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader3">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent3">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader4">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent4">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader6">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent6">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="item item-divider periodHeader7">
+                   <i class="ion-clock"></i> 10:00 am - 11:00 pm
+                  </div>
+                  <div class="item item-text-wrap periodContent7">
+                    <p class="">Subject : English</p>
+                    <p class="">Staff Name : Sivakumar</p>
+                  </div>
+              </div>
+            </ion-nav-view> 
+        </ion-tab>
+    </ion-tabs> 
+  </ion-content>
+</ion-view>

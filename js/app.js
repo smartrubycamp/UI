@@ -59,6 +59,22 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
         }
       }
     })
+    .state('app.Timetable', {
+      url: '/Timetable',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/timeTable.html'
+        }
+      } 
+    })
+    .state('app.next', {
+      url: '/app.next',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/playlist.html'
+        }
+      }
+    })
     .state('app.dashboard', {
       url: '/dashboard',
       views: {
@@ -96,15 +112,5 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
       }
     })
 
-  // .state('app.single', {
-  //   url: '/playlists/:playlistId',
-  //   views: {
-  //     'menuContent': {
-  //       templateUrl: 'templates/playlist.html',
-  //       controller: 'PlaylistCtrl'
-  //     }
-  //   }
-  // });
-  // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dashboard');
 });
