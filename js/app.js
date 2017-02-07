@@ -111,6 +111,34 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova'])
         }
       }
     })
+	 .state('app.calendar', {
+      url: '/calendar',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/calendar.html',
+          controller: 'CalendarDemoCtrl'
+        }
+      }
+    })
+	 .state('app.addEvent', {
+      url: '/addEvent',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/addEvent.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+	 .state('app.report', {
+      url: '/report',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/report.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+
 
   $urlRouterProvider.otherwise('/app/dashboard');
 });
