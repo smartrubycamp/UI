@@ -1,6 +1,17 @@
 <ion-view view-title="About Us" name="select-view">
-    <ion-content >
+	<style>
+		<link rel="stylesheet" href="http://code.ionicframework.com/1.1.1/css/ionic.min.css"/>
+		<link rel="stylesheet" href="<bower lib installation path>/ionic-calendar/dist/css/calendar.min.css"/>
+		<script src="http://code.ionicframework.com/1.1.1/js/ionic.bundle.min.js"></script>
+		<script src="<bower lib installation path>/ionic-calendar/dist/js/calendar-tpls.min.js"></script>
+	
+	</style>
+    <ion-content ng-controller="AppCtrl">
 	<ion-list>
+	 <!-- <button class="button" ng-click="createEvent()" style="margin-left:500px;;">Create Event</button> -->
+	 <div>
+ </div>
+	  <calendar calendar-mode="mode" event-source="eventSource" style="margin-left:500px;">
 	    <div class="list card">
             <div class="col"><img  class="you" src="img/DSC_5212.JPG" style="width:290px;" ></div>
 			
